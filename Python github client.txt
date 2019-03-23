@@ -1,0 +1,25 @@
+Python github client
+
+Requirements
+
+The script will have 3 different modes
+
+   1.    Python my-script.py --user <USERNAME> --list-repos
+      Python my-script.py -u <USERNAME> -l
+      
+      In this case you fetch all respo from the given user and present a list of repositories
+      
+2. Python my-script.py --user <USERNAME> --repo <REPO_NAME>
+   Python my-script.py -u <USERNAME> -r <REPO_NAME>
+
+	In this case you fetch all details for the given repo and present them in stdout
+
+3. Python my-script.py --user <USERNAME> --repo <REPO_NAME> --pull-requests
+  Python my-script.py -u <USERNAME> -r <REPO_NAME> -p
+
+In this case the script should print any open pull requests for the given repo
+
+
+
+   1.    Use "argparse" for argument parsing on the command line. Use any sensible default values
+   2.    Use "request" for talking to the github api
